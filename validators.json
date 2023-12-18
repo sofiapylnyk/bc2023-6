@@ -1,0 +1,97 @@
+{
+    "createSchema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "desc": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "serial_number": {
+                "type": "string"
+            },
+            "manufacturer": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "image_path": {
+                "type": ["string", "null"],
+                "default": null
+            }
+        },
+        "required": ["serial_number"],
+        "additionalProperties": false
+    },
+    "updateSchema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "desc": {
+                "type": "string"
+            },
+            "serial_number": {
+                "type": "string"
+            },
+            "manufacturer": {
+                "type": "string"
+            },
+            "image_path": {
+                "type": "string"
+            }
+        },
+        "additionalProperties": false
+    },
+    "userSchema": {
+        "type": "object",
+        "properties": {
+            "username": {
+                "type": "string"
+            },
+            "name": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "surname": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "email": {
+                "type": ["string", "null"],
+                "default": null
+            },
+            "phone": {
+                "type": ["string", "null"],
+                "default": null
+            }
+        },
+        "required": ["username"],
+        "additionalProperties": false
+    },
+    "userUpdateSchema": {
+        "type": "object",
+        "properties": {
+            "username": {
+                "type": "string"
+            },
+            "name": {
+                "type": "string"
+            },
+            "surname": {
+                "type": "string"
+            },
+            "email": {
+                "type": "string"
+            },
+            "phone": {
+                "type": "string"
+            }
+        },
+        "additionalProperties": false
+    }
+}
+    
